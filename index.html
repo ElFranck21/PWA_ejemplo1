@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin internet mi chavo</title>
+    <!--Vincular manifest-->
+    <link rel="manifest" href="manifest.json">
+
+    <!--Color de la barra del navegador en moviles-->
+    <meta name="theme_color" content="#2196f3">
+</head>
+<body>
+    <h1>Bienvenido a mi PWA</h1>
+    <p>Se puede instalar como aplicacion en tu celular Puro EMEYPEDIA SI SEÑOR</p>
+    <button onclick="alert('Hola desde mi PWA, te engañe Apoco si')">
+        Descargar
+    </button>
+
+    <!--Registrar el service worker-->
+    <script>
+        if("serviceWorker" in navigator){
+            navigator.serviceWorker.register("sw.js")
+            .then(reg => console.log("service  Worker registrado"))
+            .catch(err => console.log("Error al registrar el SW"))
+        }
+    </script>
+</body>
+</html>
+

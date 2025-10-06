@@ -1,7 +1,8 @@
 {
     "name":"Emeypedia",
     "short_name":"EMP",
-    "start_url":"index.html",
+    "start_url":"/PWA_ejemplo1/index.html",
+    "scope":"/PWA_ejemplo1/",
     "display":"standalone",
     "background":"#ffff",
     "theme_color":"#2196f3",

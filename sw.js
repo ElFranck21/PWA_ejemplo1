@@ -1,12 +1,18 @@
 // Plantilla de Service Worker
 
 // 1.- Nombre y archivos a cachear 
-const CACHE_NAME= "nombre-del-cache" //Nombre de la app
+const CACHE_NAME= "mi-pwa-cache-v1"; //Nombre de la app
+const BASE_PATH="/PWA_ejemplo1";
 const urlsCache=[
-    "index.html",
+    `${BASE_PATH}index.html`,
+    `${BASE_PATH}manifest.json`,
+    `${BASE_PATH}offline.html`,
+    `${BASE_PATH}icons/icon-192x192,png`,
+    `${BASE_PATH}icons/icon-512x512.png`,
+   // "index.html",
    // "style.css",
    // "app.js", //Archivo del arrance de la app
-    "offline.html", // Pagina de error 404 es obligatoria porque no usa internet
+   // "offline.html", // Pagina de error 404 es obligatoria porque no usa internet
 
 ];
 

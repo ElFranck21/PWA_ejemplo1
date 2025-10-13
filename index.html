@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sin internet mi chavo</title>
     <!--Vincular manifest-->
-    <link rel="manifest" href="/PWA_ejemplo1/manifest.json">
+    <link rel="manifest" href="PWA_ejemplo1/manifest.json">
 
     <!--Color de la barra del navegador en moviles-->
     <meta name="theme_color" content="#2196f3">
@@ -20,7 +20,7 @@
     <!--Registrar el service worker-->
     <script>
         if("serviceWorker" in navigator){
-            navigator.serviceWorker.register("/PWA_ejemplo1/sw.js")
+            navigator.serviceWorker.register("PWA_ejemplo1/sw.js")
             .then(reg => console.log("service  Worker registrado"))
             .catch(err => console.log("Error al registrar el SW"))
         }

@@ -2,7 +2,7 @@
 
 // 1.- Nombre y archivos a cachear 
 const CACHE_NAME= "mi-pwa-cache-v1"; //Nombre de la app
-const BASE_PATH="/PWA_ejemplo1/";
+const BASE_PATH="PWA_ejemplo1/";
 const urlsCache=[
     `${BASE_PATH}index.html`,
     `${BASE_PATH}manifest.json`,

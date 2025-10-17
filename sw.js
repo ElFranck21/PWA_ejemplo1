@@ -20,7 +20,7 @@ const urlsCache=[
 // Se dispara la pimera ve que se registra el service worker
 self.addEventListener("install", event => {
     event.waitUntil(
-        caches.open(CACHE_NAME).then(cache.addAll(urlsCache))
+        caches.open(CACHE_NAME).then(cache => cache.addAll(urlsCache))
     );
 });
 

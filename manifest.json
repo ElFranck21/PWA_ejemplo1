@@ -1,13 +1,13 @@
 {
     "name":"Emeypedia",
     "short_name":"EMP",
-    "start_url":"PWA_ejemplo1/index.html",
-    "scope":"PWA_ejemplo1/",
+    "start_url":"/PWA_ejemplo1/index.html",
+    "scope":"/PWA_ejemplo1/",
     "display":"standalone",
-    "background":"#ffff",
+    "background_color":"#ffffff",
     "theme_color":"#2196f3",
     "orientation":"portrait",
-    "iconos":[
+    "icons":[
         {
             "src":"PWA_ejemplo1/icons/icon-96x96.png",
             "sizes":"96x96",
@@ -20,7 +20,7 @@
         },
         {
             "src":"PWA_ejemplo1/icons/icon-180x180.png",
-            "sizes":"256x256",
+            "sizes":"180x180",
             "type":"image/png"
         },
         {

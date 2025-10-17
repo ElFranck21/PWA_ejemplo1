@@ -7,7 +7,7 @@ const urlsCache=[
     `${BASE_PATH}index.html`,
     `${BASE_PATH}manifest.json`,
     `${BASE_PATH}offline.html`,
-    `${BASE_PATH}icons/icon-192x192,png`,
+    `${BASE_PATH}icons/icon-192x192.png`,
     `${BASE_PATH}icons/icon-512x512.png`,
    // "index.html",
    // "style.css",
@@ -20,7 +20,7 @@ const urlsCache=[
 // Se dispara la pimera ve que se registra el service worker
 self.addEventListener("install", event => {
     event.waitUntil(
-        caches.open(CACHE_NAME).then(cache.addALL(urlsCache))
+        caches.open(CACHE_NAME).then(cache.addAll(urlsCache))
     );
 });
 
